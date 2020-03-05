@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TraitDef>
+    <defName>Gay</defName>
+    <commonality>0.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>gay</label>
+        <description>NAME is romantically attracted to people of HIS own gender.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

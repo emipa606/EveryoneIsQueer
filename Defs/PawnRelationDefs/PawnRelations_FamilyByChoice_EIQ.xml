@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- spouse / lover -->
+
+  <PawnRelationDef>
+    <workerClass>EveryoneIsQueer._PawnRelationWorker_Spouse</workerClass>
+    <defName>Spouse</defName>
+    <label>husband</label>
+    <labelFemale>wife</labelFemale>
+    <importance>210</importance>
+    <diedThought>MyHusbandDied</diedThought>
+    <diedThoughtFemale>MyWifeDied</diedThoughtFemale>
+    <killedThought>KilledMySpouse</killedThought>
+    <soldThought>SoldMyLovedOne</soldThought>
+    <opinionOffset>30</opinionOffset>
+    <generationChanceFactor>0.4</generationChanceFactor>
+    <implied>false</implied>
+    <reflexive>true</reflexive>
+  </PawnRelationDef>
+  
+  <PawnRelationDef>
+    <workerClass>EveryoneIsQueer._PawnRelationWorker_Fiance</workerClass>
+    <defName>Fiance</defName>
+    <label>fiance</label>
+    <labelFemale>fiancée</labelFemale>
+    <importance>205</importance>
+    <diedThought>MyFianceDied</diedThought>
+    <diedThoughtFemale>MyFianceeDied</diedThoughtFemale>
+    <killedThought>KilledMyFiance</killedThought>
+    <soldThought>SoldMyLovedOne</soldThought>
+    <opinionOffset>35</opinionOffset>
+    <generationChanceFactor>0.08</generationChanceFactor>
+    <implied>false</implied>
+    <reflexive>true</reflexive>
+  </PawnRelationDef>
+  
+  <PawnRelationDef>
+    <workerClass>EveryoneIsQueer._PawnRelationWorker_Lover</workerClass>
+    <defName>Lover</defName>
+    <label>lover</label>
+    <importance>200</importance>
+    <diedThought>MyLoverDied</diedThought>
+    <killedThought>KilledMyLover</killedThought>
+    <soldThought>SoldMyLovedOne</soldThought>
+    <opinionOffset>35</opinionOffset>
+    <generationChanceFactor>0.35</generationChanceFactor>
+    <implied>false</implied>
+    <reflexive>true</reflexive>
+  </PawnRelationDef>
+
+  <!-- ex-lover / ex-spouse -->
+  
+  <PawnRelationDef>
+    <defName>ExSpouse</defName>
+    <workerClass>EveryoneIsQueer._PawnRelationWorker_ExSpouse</workerClass>
+    <label>ex-husband</label>
+    <labelFemale>ex-wife</labelFemale>
+    <importance>130</importance>
+    <opinionOffset>-15</opinionOffset>
+    <generationChanceFactor>0.09</generationChanceFactor>
+    <implied>false</implied>
+    <reflexive>true</reflexive>
+  </PawnRelationDef>
+  
+  <PawnRelationDef>
+    <defName>ExLover</defName>
+    <workerClass>EveryoneIsQueer._PawnRelationWorker_ExLover</workerClass>
+    <label>ex-lover</label>
+    <importance>125</importance>
+    <opinionOffset>-15</opinionOffset>
+    <generationChanceFactor>0.1</generationChanceFactor>
+    <implied>false</implied>
+    <reflexive>true</reflexive>
+  </PawnRelationDef>
+  
+</Defs>

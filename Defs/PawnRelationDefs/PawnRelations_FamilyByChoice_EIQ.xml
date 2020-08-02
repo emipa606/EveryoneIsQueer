@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <!-- spouse / lover -->
-
   <PawnRelationDef>
     <workerClass>EveryoneIsQueer._PawnRelationWorker_Spouse</workerClass>
     <defName>Spouse</defName>
@@ -18,7 +16,6 @@
     <implied>false</implied>
     <reflexive>true</reflexive>
   </PawnRelationDef>
-  
   <PawnRelationDef>
     <workerClass>EveryoneIsQueer._PawnRelationWorker_Fiance</workerClass>
     <defName>Fiance</defName>
@@ -34,7 +31,6 @@
     <implied>false</implied>
     <reflexive>true</reflexive>
   </PawnRelationDef>
-  
   <PawnRelationDef>
     <workerClass>EveryoneIsQueer._PawnRelationWorker_Lover</workerClass>
     <defName>Lover</defName>
@@ -48,9 +44,7 @@
     <implied>false</implied>
     <reflexive>true</reflexive>
   </PawnRelationDef>
-
   <!-- ex-lover / ex-spouse -->
-  
   <PawnRelationDef>
     <defName>ExSpouse</defName>
     <workerClass>EveryoneIsQueer._PawnRelationWorker_ExSpouse</workerClass>
@@ -62,7 +56,6 @@
     <implied>false</implied>
     <reflexive>true</reflexive>
   </PawnRelationDef>
-  
   <PawnRelationDef>
     <defName>ExLover</defName>
     <workerClass>EveryoneIsQueer._PawnRelationWorker_ExLover</workerClass>
@@ -73,5 +66,4 @@
     <implied>false</implied>
     <reflexive>true</reflexive>
   </PawnRelationDef>
-  
 </Defs>

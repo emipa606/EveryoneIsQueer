@@ -1,25 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- spouse / lover -->
-
-  <Spouse.label>husband</Spouse.label>
-  <Spouse.labelFemale>wife</Spouse.labelFemale>
-
-  <Fiance.label>fiance</Fiance.label>
-  <Fiance.labelFemale>fiancée</Fiance.labelFemale>
-
-  <Lover.label>lover</Lover.label>
-  <Lover.labelFemale>lover</Lover.labelFemale>
-
-
+  <!--<Spouse.label>husband</Spouse.label>-->
+  <!--<Spouse.labelFemale>wife</Spouse.labelFemale>-->
+  <!--<Fiance.label>fiance</Fiance.label>-->
+  <!--<Fiance.labelFemale>fiancée</Fiance.labelFemale>-->
+  <!--<Lover.label>lover</Lover.label>-->
+  <!--<Lover.labelFemale>lover</Lover.labelFemale>-->
   <!-- ex-lover / ex-spouse -->
-
-  <ExSpouse.label>ex-husband</ExSpouse.label>
-  <ExSpouse.labelFemale>ex-wife</ExSpouse.labelFemale>
-
-  <ExLover.label>ex-lover</ExLover.label>
-  <ExLover.labelFemale>ex-lover</ExLover.labelFemale>
-
+  <!--<ExSpouse.label>ex-husband</ExSpouse.label>-->
+  <!--<ExSpouse.labelFemale>ex-wife</ExSpouse.labelFemale>-->
+  <!--<ExLover.label>ex-lover</ExLover.label>-->
+  <!--<ExLover.labelFemale>ex-lover</ExLover.labelFemale>-->
 
 </LanguageData>

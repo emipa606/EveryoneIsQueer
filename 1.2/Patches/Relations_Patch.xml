@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnRelationDef[defName="Spouse"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._PawnRelationWorker_Spouse</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnRelationDef[defName="Fiance"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._PawnRelationWorker_Fiance</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnRelationDef[defName="Lover"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._PawnRelationWorker_Lover</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnRelationDef[defName="ExSpouse"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._PawnRelationWorker_ExSpouse</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnRelationDef[defName="ExLover"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._PawnRelationWorker_ExLover</workerClass>
+    </value>
+  </Operation>
+</Patch>

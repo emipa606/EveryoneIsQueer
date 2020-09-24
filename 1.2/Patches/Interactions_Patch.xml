@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="RomanceAttempt"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._InteractionWorker_RomanceAttempt</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="MarriageProposal"]/workerClass</xpath>
+    <value>
+      <workerClass>EveryoneIsQueer._InteractionWorker_MarriageProposal</workerClass>
+    </value>
+  </Operation>
+</Patch>

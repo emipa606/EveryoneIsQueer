@@ -65,5 +65,4 @@
   <!--<MarriageProposal.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameDef] proposed marriage to [OTHER_nameDef].</MarriageProposal.logRulesInitiator.rulesStrings.0>-->
   <!--<MarriageProposal.logRulesInitiator.rulesStrings.1>r_logentry->[INITIATOR_nameDef] proposed a lifelong commitment to [OTHER_nameDef].</MarriageProposal.logRulesInitiator.rulesStrings.1>-->
   <!--<MarriageProposal.logRulesInitiator.rulesStrings.2>r_logentry->[INITIATOR_nameDef] told [OTHER_nameDef] that [INITIATOR_pronoun] wants to spend [INITIATOR_possessive] life with [OTHER_objective].</MarriageProposal.logRulesInitiator.rulesStrings.2>-->
-
 </LanguageData>

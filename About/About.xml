@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Everyone is Queer (Continued)</name>
   <packageId>Mlie.EveryoneIsQueer</packageId>
@@ -21,7 +21,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Suzi and Marcus mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1505792697
 
@@ -30,16 +30,20 @@ I reserve the right to remove any comments that I deem not useful for the develo
 
 - Removed the Bisexual trait as it was redundant
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
 		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
 		[td][url=https://github.com/emipa606/EveryoneIsQueer][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-	[/tr]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/6KqTKks.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 With this mod, all your colonists are queer! Anyone can romance anyone regardless of gender! 
 
@@ -60,7 +64,7 @@ The way the age stuff works with this mod is that colonists prefer people within
 The original game has it that women prefer men 10 years older to 3 years younger and willing accept up to 30 years older and 10 years younger. Men prefer women their age to 10 years younger and will accept up to 30 years younger or 10 years older.
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -71,4 +75,3 @@ The original game has it that women prefer men 10 years older to 3 years younger
 [/list]
 </description>
 </ModMetaData>
-

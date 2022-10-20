@@ -2,15 +2,14 @@
 using RimWorld;
 using Verse;
 
-namespace EveryoneIsQueer
+namespace EveryoneIsQueer;
+
+[HarmonyPatch(typeof(LovePartnerRelationUtility), "HasAnyLovePartnerOfTheSameGender", null)]
+internal static class _LovePartnerRelationUtility_HasAnyLovePartnerOfTheSameGender
 {
-    [HarmonyPatch(typeof(LovePartnerRelationUtility), "HasAnyLovePartnerOfTheSameGender", null)]
-    internal static class _LovePartnerRelationUtility_HasAnyLovePartnerOfTheSameGender
+    [HarmonyPostfix]
+    public static void HasAnyLovePartnerOfTheSameGender(Pawn pawn, ref bool __result)
     {
-        [HarmonyPostfix]
-        public static void HasAnyLovePartnerOfTheSameGender(Pawn pawn, ref bool __result)
-        {
-            __result = false;
-        }
+        __result = false;
     }
 }

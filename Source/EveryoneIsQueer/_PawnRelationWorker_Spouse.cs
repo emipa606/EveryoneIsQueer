@@ -1,14 +1,13 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace EveryoneIsQueer
+namespace EveryoneIsQueer;
+
+public class _PawnRelationWorker_Spouse : PawnRelationWorker_Spouse
 {
-    public class _PawnRelationWorker_Spouse : PawnRelationWorker_Spouse
+    public override float GenerationChance(Pawn generated, Pawn other, PawnGenerationRequest request)
     {
-        public override float GenerationChance(Pawn generated, Pawn other, PawnGenerationRequest request)
-        {
-            return EveryoneIsQueer_Mod.LovePartnerRelationGenerationChance(generated, other, request, false) *
-                   BaseGenerationChanceFactor(generated, other, request);
-        }
+        return EveryoneIsQueer_Mod.LovePartnerRelationGenerationChance(generated, other, request, false) *
+               BaseGenerationChanceFactor(generated, other, request);
     }
 }

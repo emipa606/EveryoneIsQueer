@@ -1,6 +1,6 @@
 # EveryoneIsQueer
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Suzi and Marcus mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1505792697
@@ -10,19 +10,10 @@ I reserve the right to remove any comments that I deem not useful for the develo
 
 - Removed the Bisexual trait as it was redundant
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/EveryoneIsQueer]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 With this mod, all your colonists are queer! Anyone can romance anyone regardless of gender! 
@@ -44,7 +35,7 @@ The way the age stuff works with this mod is that colonists prefer people within
 The original game has it that women prefer men 10 years older to 3 years younger and willing accept up to 30 years older and 10 years younger. Men prefer women their age to 10 years younger and will accept up to 30 years younger or 10 years older.
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -54,6 +45,7 @@ The original game has it that women prefer men 10 years older to 3 years younger
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

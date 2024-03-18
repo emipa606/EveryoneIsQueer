@@ -41,7 +41,7 @@ internal static class _Pawn_RelationsTracker
         var num3 = 0;
         if (otherPawn.RaceProps.Humanlike)
         {
-            num3 = otherPawn.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
+            num3 = otherPawn.story.traits.DegreeOfTrait(DefDatabase<TraitDef>.GetNamedSilentFail("Beauty"));
         }
 
         var num4 = 1f;

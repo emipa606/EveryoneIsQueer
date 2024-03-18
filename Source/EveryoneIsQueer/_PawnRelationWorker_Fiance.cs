@@ -11,7 +11,7 @@ public class _PawnRelationWorker_Fiance : PawnRelationWorker_Fiance
         var num = 1f;
         num *= GetOldAgeFactor(generated);
         num *= GetOldAgeFactor(other);
-        return EveryoneIsQueer_Mod.LovePartnerRelationGenerationChance(generated, other, request, false) *
+        return EveryoneIsQueer_Mod.LovePartnerRelationGenerationChance(generated, other, false) *
                BaseGenerationChanceFactor(generated, other, request) * num;
     }
 

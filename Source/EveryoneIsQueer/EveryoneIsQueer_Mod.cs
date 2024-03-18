@@ -19,8 +19,7 @@ public class EveryoneIsQueer_Mod : Mod
     }
 
     // LovePartnerRelationUtility.LovePartnerRelationGenerationChance, but with the gender and sexuality code removed.
-    public static float LovePartnerRelationGenerationChance(Pawn generated, Pawn other,
-        PawnGenerationRequest request, bool ex)
+    public static float LovePartnerRelationGenerationChance(Pawn generated, Pawn other, bool ex)
     {
         if (generated.ageTracker.AgeBiologicalYearsFloat < 14f)
         {

@@ -1,5 +1,8 @@
 # Changelog for EveryoneIsQueer
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.2 - Word of love and the romance-action should now work regardless of gender
 
 

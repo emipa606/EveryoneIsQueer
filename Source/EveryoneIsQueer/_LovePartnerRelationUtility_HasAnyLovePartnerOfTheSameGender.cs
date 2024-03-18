@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using Verse;
 
 namespace EveryoneIsQueer;
 
@@ -8,7 +7,7 @@ namespace EveryoneIsQueer;
 internal static class _LovePartnerRelationUtility_HasAnyLovePartnerOfTheSameGender
 {
     [HarmonyPostfix]
-    public static void HasAnyLovePartnerOfTheSameGender(Pawn pawn, ref bool __result)
+    public static void HasAnyLovePartnerOfTheSameGender(ref bool __result)
     {
         __result = false;
     }

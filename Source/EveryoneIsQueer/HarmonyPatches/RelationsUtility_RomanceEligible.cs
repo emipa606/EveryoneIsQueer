@@ -2,13 +2,12 @@
 using RimWorld;
 using Verse;
 
-namespace EveryoneIsQueer;
+namespace EveryoneIsQueer.HarmonyPatches;
 
-[HarmonyPatch(typeof(RelationsUtility), "RomanceEligible")]
-internal static class _RelationsUtility_RomanceEligible
+[HarmonyPatch(typeof(RelationsUtility), nameof(RelationsUtility.RomanceEligible))]
+internal static class RelationsUtility_RomanceEligible
 {
-    [HarmonyPrefix]
-    public static bool CheckIfRomanceIsEligable(Pawn pawn, bool initiator, bool forOpinionExplanation,
+    public static bool Prefix(Pawn pawn, bool initiator, bool forOpinionExplanation,
         ref AcceptanceReport __result)
     {
         if (pawn.ageTracker.AgeBiologicalYearsFloat < 16f)

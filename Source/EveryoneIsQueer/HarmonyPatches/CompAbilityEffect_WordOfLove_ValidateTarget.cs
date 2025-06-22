@@ -2,13 +2,12 @@
 using RimWorld;
 using Verse;
 
-namespace EveryoneIsQueer;
+namespace EveryoneIsQueer.HarmonyPatches;
 
-[HarmonyPatch(typeof(CompAbilityEffect_WordOfLove), "ValidateTarget")]
-internal static class _CompAbilityEffect_WordOfLove_ValidateTarget
+[HarmonyPatch(typeof(CompAbilityEffect_WordOfLove), nameof(CompAbilityEffect_WordOfLove.ValidateTarget))]
+internal static class CompAbilityEffect_WordOfLove_ValidateTarget
 {
-    [HarmonyPrefix]
-    public static void AddBisexual(LocalTargetInfo ___selectedTarget, out bool __state)
+    public static void Prefix(LocalTargetInfo ___selectedTarget, out bool __state)
     {
         var pawn = ___selectedTarget.Pawn;
         __state = false;
@@ -21,8 +20,7 @@ internal static class _CompAbilityEffect_WordOfLove_ValidateTarget
         __state = true;
     }
 
-    [HarmonyPostfix]
-    public static void RemoveBisexual(LocalTargetInfo ___selectedTarget, bool __state)
+    public static void Postfix(LocalTargetInfo ___selectedTarget, bool __state)
     {
         var pawn = ___selectedTarget.Pawn;
         if (__state)

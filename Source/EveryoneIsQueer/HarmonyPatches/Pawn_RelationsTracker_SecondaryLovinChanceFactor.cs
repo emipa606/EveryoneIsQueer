@@ -4,18 +4,17 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace EveryoneIsQueer;
+namespace EveryoneIsQueer.HarmonyPatches;
 
-[HarmonyPatch(typeof(Pawn_RelationsTracker), "SecondaryLovinChanceFactor", null)]
-internal static class _Pawn_RelationsTracker
+[HarmonyPatch(typeof(Pawn_RelationsTracker), nameof(Pawn_RelationsTracker.SecondaryLovinChanceFactor), null)]
+internal static class Pawn_RelationsTracker_SecondaryLovinChanceFactor
 {
-    internal static FieldInfo _pawn;
+    private static FieldInfo pawnFieldInfo;
 
-    [HarmonyPostfix]
-    public static void SecondaryLovinChanceFactor(Pawn_RelationsTracker __instance, Pawn otherPawn,
+    public static void Postfix(Pawn_RelationsTracker __instance, Pawn otherPawn,
         ref float __result)
     {
-        var pawn = __instance.GetPawn();
+        var pawn = __instance.getPawn();
         if (pawn.def != otherPawn.def || pawn == otherPawn)
         {
             __result = 0f;
@@ -60,19 +59,19 @@ internal static class _Pawn_RelationsTracker
         __result = num * num2 * num5 * num6 * num4;
     }
 
-    private static Pawn GetPawn(this Pawn_RelationsTracker _this)
+    private static Pawn getPawn(this Pawn_RelationsTracker _this)
     {
-        if (_pawn != null)
+        if (pawnFieldInfo != null)
         {
-            return (Pawn)_pawn.GetValue(_this);
+            return (Pawn)pawnFieldInfo.GetValue(_this);
         }
 
-        _pawn = typeof(Pawn_RelationsTracker).GetField("pawn", BindingFlags.Instance | BindingFlags.NonPublic);
-        if (_pawn == null)
+        pawnFieldInfo = typeof(Pawn_RelationsTracker).GetField("pawn", BindingFlags.Instance | BindingFlags.NonPublic);
+        if (pawnFieldInfo == null)
         {
             Log.ErrorOnce("Unable to reflect Pawn_RelationsTracker.pawn!", 305432421);
         }
 
-        return (Pawn)_pawn?.GetValue(_this);
+        return (Pawn)pawnFieldInfo?.GetValue(_this);
     }
 }

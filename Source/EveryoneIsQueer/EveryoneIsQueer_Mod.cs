@@ -51,41 +51,36 @@ public class EveryoneIsQueer_Mod : Mod
             return 0f;
         }
 
-        var generationChanceAgeFactor = GetGenerationChanceAgeFactor(generated);
-        var generationChanceAgeFactor2 = GetGenerationChanceAgeFactor(other);
-        var generationChanceAgeGapFactor = GetGenerationChanceAgeGapFactor(generated, other, ex);
+        var generationChanceAgeFactor = getGenerationChanceAgeFactor(generated);
+        var generationChanceAgeFactor2 = getGenerationChanceAgeFactor(other);
+        var generationChanceAgeGapFactor = getGenerationChanceAgeGapFactor(generated, other, ex);
         var num3 = 1f;
         if (generated.GetRelations(other).Any(x => x.familyByBloodRelation))
         {
             num3 = 0.01f;
         }
 
-        //var num4 = request.FixedMelanin.HasValue
-        //    ? ChildRelationUtility.GetMelaninSimilarityFactor(request.FixedMelanin.Value, other.story.melanin)
-        //    : PawnSkinColors.GetMelaninCommonalityFactor(other.story.melanin);
-
         return num * generationChanceAgeFactor * generationChanceAgeFactor2 * generationChanceAgeGapFactor * num3;
-        //* num4;
     }
 
-    private static float GetGenerationChanceAgeFactor(Pawn p)
+    private static float getGenerationChanceAgeFactor(Pawn p)
     {
         var value = GenMath.LerpDouble(14f, 27f, 0f, 1f, p.ageTracker.AgeBiologicalYearsFloat);
         return Mathf.Clamp(value, 0f, 1f);
     }
 
-    private static float GetGenerationChanceAgeGapFactor(Pawn p1, Pawn p2, bool ex)
+    private static float getGenerationChanceAgeGapFactor(Pawn p1, Pawn p2, bool ex)
     {
         var num = Mathf.Abs(p1.ageTracker.AgeBiologicalYearsFloat - p2.ageTracker.AgeBiologicalYearsFloat);
         if (ex)
         {
-            var num2 = MinPossibleAgeGapAtMinAgeToGenerateAsLovers(p1, p2);
+            var num2 = minPossibleAgeGapAtMinAgeToGenerateAsLovers(p1, p2);
             if (num2 >= 0f)
             {
                 num = Mathf.Min(num, num2);
             }
 
-            var num3 = MinPossibleAgeGapAtMinAgeToGenerateAsLovers(p2, p1);
+            var num3 = minPossibleAgeGapAtMinAgeToGenerateAsLovers(p2, p1);
             if (num3 >= 0f)
             {
                 num = Mathf.Min(num, num3);
@@ -101,7 +96,7 @@ public class EveryoneIsQueer_Mod : Mod
         return Mathf.Clamp(value, 0.001f, 1f);
     }
 
-    private static float MinPossibleAgeGapAtMinAgeToGenerateAsLovers(Pawn p1, Pawn p2)
+    private static float minPossibleAgeGapAtMinAgeToGenerateAsLovers(Pawn p1, Pawn p2)
     {
         var num = p1.ageTracker.AgeChronologicalYearsFloat - 14f;
         if (num < 0f)
@@ -113,14 +108,11 @@ public class EveryoneIsQueer_Mod : Mod
         var num2 = PawnRelationUtility.MaxPossibleBioAgeAt(p2.ageTracker.AgeBiologicalYearsFloat,
             p2.ageTracker.AgeChronologicalYearsFloat, num);
         var num3 = PawnRelationUtility.MinPossibleBioAgeAt(p2.ageTracker.AgeBiologicalYearsFloat, num);
-        if (num2 < 0f)
+        switch (num2)
         {
-            return -1f;
-        }
-
-        if (num2 < 14f)
-        {
-            return -1f;
+            case < 0f:
+            case < 14f:
+                return -1f;
         }
 
         if (num3 <= 14f)
